@@ -96,7 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
-})
+
+  })
 
 // Mobile menu functionality
 let isMobileMenuOpen = false

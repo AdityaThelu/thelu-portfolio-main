@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thelu Mohan P Aditya - Portfolio</title>
+    <meta name="description" content="Software Engineer & Project Manager Portfolio">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo" onclick="scrollToSection('hero')">
+                    thelu.
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('education')" class="nav-link">Education</button>
+                    <button onclick="scrollToSection('experience')" class="nav-link">Experience</button>
+                    <button onclick="scrollToSection('projects')" class="nav-link">Projects</button>
+                    <button onclick="scrollToSection('skills')" class="nav-link">Skills</button>
+                    <button onclick="scrollToSection('leadership')" class="nav-link">Leadership</button>
+                    <button onclick="scrollToSection('achievements')" class="nav-link">Achievements</button>
+                    <button onclick="scrollToSection('publications')" class="nav-link">Publications</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+                <button onclick="scrollToSection('education')" class="mobile-nav-link">Education</button>
+                <button onclick="scrollToSection('experience')" class="mobile-nav-link">Experience</button>
+                <button onclick="scrollToSection('projects')" class="mobile-nav-link">Projects</button>
+                <button onclick="scrollToSection('skills')" class="mobile-nav-link">Skills</button>
+                <button onclick="scrollToSection('leadership')" class="mobile-nav-link">Leadership</button>
+                <button onclick="scrollToSection('achievements')" class="mobile-nav-link">Achievements</button>
+                <button onclick="scrollToSection('publications')" class="mobile-nav-link">Publications</button>
+                <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-container">
+                    <span class="avatar-text">thelu.</span>
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <h1 class="hero-title">Thelu Mohan P Aditya</h1>
+                
+                <div class="hero-subtitle">
+                    <div class="subtitle-line"></div>
+                    <p class="subtitle-text">Software Engineer & Project Manager</p>
+                    <div class="subtitle-line"></div>
+                </div>
+
+                <p class="hero-quote">"Building myself step by step, day by day, brick by brick."</p>
+
+                <div class="hero-contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+91 9030164688</span>
+                    </div>
+                    <span class="contact-separator">|</span>
+                    <div class="contact-item">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>official.thelu@gmail.com</span>
+                    </div>
+                    <span class="contact-separator">|</span>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>Visakhapatnam, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <div class="stat-number">93.4%</div>
+                    <div class="stat-label">ML Model Accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div class="stat-number">$1000</div>
+                    <div class="stat-label">Scholarship Earned</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Latency Reduction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Students Impacted</div>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.open('https://drive.google.com/file/d/1d55CKwuQtiMgLpoAdO5t37nbaTTSS_NS/view?usp=share_link', '_blank')">
+                    <i data-lucide="download"></i>
+                    Download Resume
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                    <i data-lucide="mail"></i>
+                    Get In Touch
+                </button>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/adityathelu" target="_blank" class="social-link" title="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adityathelu" target="_blank" class="social-link" title="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:official.thelu@gmail.com" class="social-link" title="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+                <a href="tel:+919030164688" class="social-link" title="Phone">
+                    <i data-lucide="phone"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="about" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Summary</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <p class="summary-text">
+                        Results-driven Software Engineer with a strong foundation in development, problem-solving, and workflow
+                        optimization. Passionate about designing efficient systems and refining technical solutions to enhance
+                        performance. Demonstrates leadership, teamwork, and communication skills to drive innovation and
+                        streamline operations, with proven hands-on experience in project coordination, machine learning
+                        applications, and cloud technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="education-list">
+                <div class="card education-card">
+                    <div class="card-content">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-institution">Amrita Vishwa Vidyapeetham</h3>
+                                <p class="education-degree">Bachelor's of Technology, Electronics and Computers Engineering</p>
+                                <div class="education-meta">
+                                    <div class="meta-item">
+                                        <i data-lucide="calendar"></i>
+                                        <span>Aug 2021 - May 2025</span>
+                                    </div>
+                                    <span>•</span>
+                                    <div class="meta-item">
+                                        <i data-lucide="map-pin"></i>
+                                        <span>Bengaluru, KA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coursework">
+                            <h4 class="coursework-title">Coursework</h4>
+                            <div class="badge-container">
+                                <span class="badge">Data Structures and Algorithms</span>
+                                <span class="badge">Operating Systems</span>
+                                <span class="badge">Object-Oriented Programming</span>
+                                <span class="badge">Computer Networks</span>
+                                <span class="badge">Database Systems</span>
+                                <span class="badge">Machine Learning</span>
+                                <span class="badge">Cloud Computing</span>
+                                <span class="badge">Software Engineering</span>
+                                <span class="badge">Scalable System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card education-card">
+                    <div class="card-content">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-institution">Narayana Jr. College</h3>
+                                <p class="education-degree">Class 12th, PCM, Board of Intermediate Education</p>
+                                <div class="education-meta">
+                                    <div class="meta-item">
+                                        <i data-lucide="calendar"></i>
+                                        <span>Jun 2019 - Sep 2021</span>
+                                    </div>
+                                    <span>•</span>
+                                    <div class="meta-item">
+                                        <i data-lucide="map-pin"></i>
+                                        <span>Visakhapatnam, AP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card education-card">
+                    <div class="card-content">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-institution">DAV High School</h3>
+                                <p class="education-degree">Class 10th, Board of Secondary Education</p>
+                                <div class="education-meta">
+                                    <div class="meta-item">
+                                        <i data-lucide="calendar"></i>
+                                        <span>Jun 2018 - Mar 2019</span>
+                                    </div>
+                                    <span>•</span>
+                                    <div class="meta-item">
+                                        <i data-lucide="map-pin"></i>
+                                        <span>Visakhapatnam, AP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="card experience-card">
+                <div class="card-content">
+                    <div class="experience-layout">
+                        <div class="experience-icon">
+                            <div class="icon-container">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                        </div>
+
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3 class="experience-title">Associate Project Manager Intern</h3>
+                                <p class="experience-company">Excelerate - St. Louis University, USA</p>
+                                <div class="experience-meta">
+                                    <span>Jan 2024 - Feb 2024</span>
+                                    <span>•</span>
+                                    <span>Remote, Virtual</span>
+                                </div>
+                            </div>
+
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Optimized Agile workflows, reducing project cycle time by 15%, integrating Kanban methodology, Gantt charts and Trello automation for seamless execution.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Led strategic planning and stakeholder alignment, ensuring a 100% deadline success rate across multiple high-complexity projects.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Implemented Quality Control Framework, refining benchmarking strategies, submission excellence and stakeholder collaboration and increasing operational efficiency by 20%.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Enhanced project budgeting, analyzing financial allocation using data-driven estimates, contributing to an optimized $70,730 hackathon budget that balanced sustainability with innovation.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Facilitated cross-functional collaboration, earning a 99% peer evaluation score, recognized for strategic leadership, structured decision-making and clear stakeholder communication.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Co-managed HackQuest Global Hackathon, orchestrating workflow automation and risk mitigation strategies while supporting multi-team digital collaboration across continents.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Refined project documentation and evaluation metrics, increasing transparency and execution accuracy, directly impacting judging effectiveness and participant experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i data-lucide="brain"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">AI University Chatbot</h3>
+                                <p class="project-period">Aug 2024 - Jan 2025</p>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            Enhanced website usability by 28%, streamlining access to admissions, program details and campus information through Gemini API-driven intelligent responses.
+                        </p>
+
+                        <div class="project-metrics">
+                            <h4 class="metrics-title">Key Metrics</h4>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Enhanced website usability by 28%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>10% increase in user satisfaction</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Scalable backend architecture for high-traffic scenarios</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="badge-container">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Gemini API (LLM)</span>
+                        </div>
+
+                        <button class="btn btn-project" onclick="window.open('https://github.com/AdityaThelu/AI-University-Chatbot', '_blank')">
+                            View Project
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i data-lucide="cloud"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Multi-Cloud Collaborative Platform</h3>
+                                <p class="project-period">Sep 2023 - Dec 2024</p>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            Developed a multi-cloud collaborative platform that seamlessly integrates AWS and Azure, enhancing task coordination and cloud interoperability.
+                        </p>
+
+                        <div class="project-metrics">
+                            <h4 class="metrics-title">Key Metrics</h4>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Achieved 50% lower latency</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>7.45% better resource utilization</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Strengthened data security with AES encryption and IAM policies</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="badge-container">
+                            <span class="badge">AWS</span>
+                            <span class="badge">Docker</span>
+                            <span class="badge">Terraform</span>
+                            <span class="badge">Rclone</span>
+                            <span class="badge">REST APIs</span>
+                        </div>
+
+                        <button class="btn btn-project" onclick="window.open('https://github.com/AdityaThelu/multicloud-collaborative-platform', '_blank')">
+                            View Project
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-content">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Customer Lifetime Value Prediction</h3>
+                                <p class="project-period">Oct 2023 - Mar 2024</p>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            Developed a machine learning-based CLV prediction model, improving accuracy by 10% through advanced probabilistic and regression modeling.
+                        </p>
+
+                        <div class="project-metrics">
+                            <h4 class="metrics-title">Key Metrics</h4>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Achieved 93.4% accuracy in CLV prediction for 44,876 customers</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Integrated regression-based prediction with business insights</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Processed 1M+ transactions using random forest, KNN regression and decision trees</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="badge-container">
+                            <span class="badge">Python</span>
+                            <span class="badge">ML</span>
+                            <span class="badge">NumPy</span>
+                            <span class="badge">pandas</span>
+                        </div>
+
+                        <button class="btn btn-project" onclick="window.open('https://github.com/AdityaThelu/Customer-Lifetime-Value-Prediction', '_blank')">
+                            View Project
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <div class="card-content">
+                        <h3 class="skill-category">Programming</h3>
+                        <div class="badge-container">
+                            <span class="badge">C</span>
+                            <span class="badge">C++</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">SQL</span>
+                            <span class="badge">HTML/CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="card-content">
+                        <h3 class="skill-category">Tools</h3>
+                        <div class="badge-container">
+                            <span class="badge">Git</span>
+                            <span class="badge">Github</span>
+                            <span class="badge">AWS</span>
+                            <span class="badge">MS Word</span>
+                            <span class="badge">PowerPoint</span>
+                            <span class="badge">Advanced Excel</span>
+                            <span class="badge">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="card-content">
+                        <h3 class="skill-category">Libraries</h3>
+                        <div class="badge-container">
+                            <span class="badge">pandas</span>
+                            <span class="badge">NumPy</span>
+                            <span class="badge">Matplotlib</span>
+                            <span class="badge">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="card-content">
+                        <h3 class="skill-category">PM Tools</h3>
+                        <div class="badge-container">
+                            <span class="badge">Trello</span>
+                            <span class="badge">Jira</span>
+                            <span class="badge">Agile/Scrum</span>
+                            <span class="badge">Gantt Charts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="card-content">
+                        <h3 class="skill-category">Soft Skills</h3>
+                        <div class="badge-container">
+                            <span class="badge">Collaboration</span>
+                            <span class="badge">Debugging</span>
+                            <span class="badge">Communication</span>
+                            <span class="badge">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card skill-card">
+                    <div class="card-content">
+                        <h3 class="skill-category">Languages</h3>
+                        <div class="badge-container">
+                            <span class="badge">English</span>
+                            <span class="badge">Hindi</span>
+                            <span class="badge">Telugu</span>
+                            <span class="badge">German (learning)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership & Extracurriculars</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="card leadership-card">
+                <div class="card-content">
+                    <div class="leadership-layout">
+                        <div class="leadership-icon">
+                            <div class="icon-container">
+                                <i data-lucide="users"></i>
+                            </div>
+                        </div>
+
+                        <div class="leadership-content">
+                            <div class="leadership-header">
+                                <h3 class="leadership-title">Core Team Member</h3>
+                                <p class="leadership-organization">Club Investo | University Tech Club | ASEB</p>
+                                <div class="leadership-meta">
+                                    <span>Oct 2022 - Apr 2024</span>
+                                    <span>•</span>
+                                    <span>Bengaluru, KA</span>
+                                </div>
+                            </div>
+
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Co-founded and established a university-based financial literacy technical club, recruiting and leading a core team of 7 members to execute structured learning initiatives.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Orchestrated and led 10+ workshops and guest lectures, engaging 200+ students, fostering a knowledge-sharing ecosystem on stock market investing and trading strategies.</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-bullet"></div>
+                                    <p>Enhanced campus-wide financial literacy, increasing student participation and establishing Club Investo's reputation as a premier knowledge hub.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="card achievement-card">
+                <div class="card-content">
+                    <div class="achievement-layout">
+                        <div class="achievement-icon">
+                            <div class="icon-container">
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <div class="achievement-content">
+                            <div class="achievement-header">
+                                <h3 class="achievement-title">Star Performer - Excelerate Internship</h3>
+                                <p class="achievement-subtitle">Associate Project Manager Intern</p>
+                            </div>
+
+                            <p class="achievement-description">
+                                Recognized for top 1% performance, earning a $1000 scholarship for excellence in project leadership, strategic planning and execution efficiency.
+                            </p>
+
+                            <div class="achievement-metrics">
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Earned 1777 skill points, ranking among the top-performing interns</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Excelled in high-impact communication, scoring 87%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bullet"></div>
+                                    <span>Demonstrated strong deadline-driven execution with 100% on-time delivery record</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Publications</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="publications-list">
+                <div class="card publication-card">
+                    <div class="card-content">
+                        <div class="publication-layout">
+                            <div class="publication-icon">
+                                <div class="icon-container">
+                                    <i data-lucide="file-text"></i>
+                                </div>
+                            </div>
+
+                            <div class="publication-content">
+                                <div class="publication-header">
+                                    <span class="publication-number">[1]</span>
+                                    <span class="badge badge-blue">Accepted under Publication</span>
+                                </div>
+
+                                <h3 class="publication-title">Enhanced Framework for Rice Leaf Disease Classification using explainable AI Insights with Deep Learning Models</h3>
+                                <p class="publication-authors">Dhanush K, Aditya Thelu, V Karteek Reddy, Giriraja C V</p>
+                                <p class="publication-venue"><strong>In</strong> 2025 16th ICCCNT, IEEE, IIT Indore, Simrol, India, July 2025</p>
+                                <p class="publication-status">Src: (Accepted under Publication)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card publication-card">
+                    <div class="card-content">
+                        <div class="publication-layout">
+                            <div class="publication-icon">
+                                <div class="icon-container">
+                                    <i data-lucide="file-text"></i>
+                                </div>
+                            </div>
+
+                            <div class="publication-content">
+                                <div class="publication-header">
+                                    <span class="publication-number">[2]</span>
+                                    <span class="badge badge-green">Published</span>
+                                </div>
+
+                                <h3 class="publication-title">Predictive Modeling for Real-Time Customer Lifetime Value</h3>
+                                <p class="publication-authors">S Lalitha, T Satvik Gupta, Aditya Thelu, V Kartheek Reddy, and V Chaitri Reddy</p>
+                                <p class="publication-venue"><strong>In</strong> 2024 15th ICCCNT, IEEE, IIT Mandi, Kamand, India, June 2024</p>
+                                <p class="publication-doi"><strong>DOI:</strong> 10.1109/ICCCNT61001.2024.10724664</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-gray">
+        <div class="container">
+            <div class="card contact-card">
+                <div class="card-content">
+                    <div class="contact-content">
+                        <h2 class="contact-title">Let's Connect</h2>
+                        <div class="section-divider"></div>
+                        <p class="contact-description">
+                            Ready to collaborate on innovative projects? I'm always excited to work with amazing teams and
+                            contribute to cutting-edge solutions that make a difference.
+                        </p>
+
+                        <div class="contact-methods">
+                            <a href="mailto:official.thelu@gmail.com" class="contact-method">
+                                <i data-lucide="mail"></i>
+                                <span>official.thelu@gmail.com</span>
+                            </a>
+                            <a href="tel:+919030164688" class="contact-method">
+                                <i data-lucide="phone"></i>
+                                <span>+91 9030164688</span>
+                            </a>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <button class="btn btn-primary" onclick="window.open('mailto:official.thelu@gmail.com', '_blank')">
+                                <i data-lucide="mail"></i>
+                                Send Email
+                            </button>
+                            <button class="btn btn-outline" onclick="window.open('https://linkedin.com/in/adityathelu', '_blank')">
+                                <i data-lucide="linkedin"></i>
+                                Connect on LinkedIn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">❤️thelu.</div>
+                <p class="footer-text">© 2024 Thelu Mohan P Aditya. Designed with precision and passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/lucide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        lucide.createIcons();
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
